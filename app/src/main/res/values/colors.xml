@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d50000</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#d32f2f</color>
+    <color name="secondaryText">#757575</color>
+    <color name="primaryText">#303030</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="hoki">#667A84</color>
+    <color name="viking">#46AFCE</color>
+    <color name="pampas">#E8E3DC</color>
+    <color name="green_white">#D6D6D5</color>
+    <color name="malibu">#4EC0E0</color>
+    <color name="white_smoke">#F5F5F5</color>
+</resources>

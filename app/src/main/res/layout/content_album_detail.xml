@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vivek.musicplayer.activities.AlbumDetailActivity"
+    tools:showIn="@layout/activity_album_detail"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/albumNameTextView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="Reputation"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/artistImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/reputation_art"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/artistAlbumDetail"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Taylor Swift"
+                android:layout_marginTop="3dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/numberOfSongs"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="20 Songs"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/albumListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/album_detail_list" />
+
+
+</LinearLayout>
